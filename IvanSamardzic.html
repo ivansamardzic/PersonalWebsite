@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h1>About Me</h1>
+            <h2 class="about-title">Ivan Samardzic</h2>
+            <div class="about-content">
+                <img src="profileimage.jpg" alt="Your Profile Image" class="profile-image">
+                <div class="about-text">
+                    <p>
+                        I am a third-year Computer Engineering student at Queen's University, passionate about exploring the fascinating world of technology and innovation. My journey in the realm of engineering has been marked by a relentless curiosity and a drive to create solutions that make a meaningful impact on the world. I thrive on challenges and love delving into complex problems, whether it's coding an elegant software solution or designing intricate hardware systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h1>Projects</h1>
+            
+            <div class="project-card">
+                <div class="project-content">
+                    <h2>User Digit Recognition</h2>
+                    <p>Python-based deep learning project using Convolutional Neural Networks, trained on the MNIST dataset, and displayed with a user-friendly interface for handwritten digit recognition.</p>
+                    <div class="project-links">
+                        <a href="userdigitrecognition.mp4" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                <a href="https://github.com/ivansamardzic/UserDigitRecognition" target="_blank">
+                    <img src="UserDigitRecognition.jpg" alt="Project 1" width="500" height="450">
+                </a>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-content">
+                    <h2>Celebrity Birthday Trivia App</h2>
+                    <p>Interactive trivia mobile app developed in Android Studio using Java, featuring an adaptive scoring system and an intuitive user interface designed with XML integration.</p>
+                    <div class="project-links">
+                        <a href="guessmaster.mp4" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                <a href="https://github.com/ivansamardzic/CelebrityBirthdayTriviaApp" target="_blank">
+                    <img src="GuessMaster.jpg" alt="Project 2" width="500" height="450">
+                </a>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-content">
+                    <h2>Mine Sweeper</h2>
+                    <p>Console-based Minesweeper game in C, featuring a grid of hidden tiles with mines and numbers indicating adjacent mines. Players can reveal tiles, flag potential mines, and aim to uncover all safe tiles to win.</p>
+                    <div class="project-links">
+                        <a href="minesweeper.mp4" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                <a href="https://github.com/ivansamardzic/MineSweeper" target="_blank">
+                    <img src="minesweeper.jpg" alt="Project 3" width="500" height="450">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h1>Contact Info</h1>
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/ivansamardzic/" target="_blank" class="contact-item">
+                    <img src="linkedin.jpg" width="50" height="50">
+                    <p>LinkedIn</p>
+                </a>
+                <a href="https://github.com/ivansamardzic" target="_blank" class="contact-item">
+                    <img src="github.png" width="50" height="50">
+                    <p>GitHub</p>
+                </a>
+                <a href="mailto:ivan.samardzic7@gmail.com" class="contact-item">
+                    <img src="email.jpg" width="60" height="48">
+                    <p>Mail</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Back to Top button -->
+<button id="back-to-top">Back to Top</button>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Ivan Samardzic</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const backButton = document.getElementById("back-to-top");
+
+        // Show the "Back to Top" button when scrolling down
+        window.addEventListener("scroll", function() {
+            if (window.scrollY > 200) { // Adjust this value to control when the button appears
+                backButton.style.display = "block";
+            } else {
+                backButton.style.display = "none";
+            }
+        });
+
+        // Scroll to the top when the button is clicked
+        backButton.addEventListener("click", function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    });
+</script>
+
+</body>
+</html>
