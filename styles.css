@@ -12,17 +12,30 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 30px 0; /* Increase the top and bottom padding to make the banner thicker */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    margin-top: 10px; /* Adjust top margin to center-align the nav links */
+    text-align: center; /* Center-align the navigation links */
 }
 
 nav ul {
     list-style: none;
+    display: inline-block; /* Display the list items as inline-block for centering */
+    margin: 0; /* Reset margin to ensure center alignment */
+    padding: 0; /* Reset padding to ensure center alignment */
 }
 
 nav ul li {
     display: inline;
     margin: 0 20px;
+    padding: 0; /* Reset padding to ensure center alignment */
 }
 
 nav a {
